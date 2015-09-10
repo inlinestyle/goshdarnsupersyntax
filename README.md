@@ -1,6 +1,6 @@
-Fucking Block Syntax
+Fucking Super Syntax
 =================
 
 Because syntax is hard.
 
-http://fuckingblocksyntax.com
+http://fuckingsupersyntax.com
