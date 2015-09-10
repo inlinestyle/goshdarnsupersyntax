@@ -26,18 +26,21 @@
       font-weight: normal;
     }
 
-    .return {
-      color: #2aa198;
+    .self {
+      color: #742DF1;
     }
-
-    .name {
-      color: #BC8800;
+    .builtin {
+      color: #9A99E7;
     }
-
-    .parameter-types, .parameters {
-      color: #7C9F00;
+    .className {
+      color: #DD0B53;
     }
-
+    .methodName {
+      color: #F94FA0;
+    }
+    .parameters {
+      color: #FEDA98;
+    }
     .disclaimer {
       line-height: 2em;
     }
@@ -105,41 +108,12 @@
 </head>
 
 <body>
-  <h1>How Do I Call A Super Method in Python 2.7?</h1>
+  <h1>How Do I Use Super?</h1>
 
   <div>
-    <h2>As a <strong>local variable</strong>:</h2>
+    <h2>In <strong>Python 2.7 (new-style class)</strong>:</h2>
     <code>
-      <span class="return">returnType</span> (^<span class="name">blockName</span>)(<span class="parameter-types">parameterTypes</span>) = ^<span class="return">returnType</span>(<span class="parameters">parameters</span>) {...};
-    </code>
-  </div>
-
-  <div>
-    <h2>As a <strong>property</strong>:</h2>
-    <code>
-      @property (nonatomic, copy) <span class="return">returnType</span> (^<span class="name">blockName</span>)(<span class="parameter-types">parameterTypes</span>);
-    </code>
-  </div>
-
-  <div>
-    <h2>As a <strong>method parameter</strong>:</h2>
-    <code>
-      - (void)someMethodThatTakesABlock:(<span class="return">returnType</span> (^)(<span class="parameter-types">parameterTypes</span>))<span class="name">blockName</span>;
-    </code>
-  </div>
-
-  <div>
-    <h2>As an <strong>argument to a method call</strong>:</h2>
-    <code>
-      [someObject someMethodThatTakesABlock:^<span class="return">returnType</span> (<span class="parameters">parameters</span>) {...}];
-    </code>
-  </div>
-
-  <div>
-    <h2>As a <strong>typedef</strong>:</h2>
-    <code>
-      typedef <span class="return">returnType</span> (^<span class="name">TypeName</span>)(<span class="parameter-types">parameterTypes</span>);<br/>
-      <span class="name">TypeName</span> blockName = ^<span class="return">returnType</span>(<span class="parameters">parameters</span>) {...};
+      <span class="builtin">super</span>(<span class="className">Class</span>, <span class="self">self</span>).<span class="methodName">method</span>(<span class="parameters">parameters</span>)
     </code>
   </div>
 
