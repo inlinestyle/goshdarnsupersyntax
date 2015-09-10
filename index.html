@@ -114,9 +114,10 @@
   <h1>How Do I Use Super?</h1>
 
   <div>
-    <h2>In <strong>Python 2.7</strong> (new-style classes):</h2>
+    <h2>In <strong>Python 2.7</strong>:</h2>
     <code>
-      <span class="builtin">super</span>(<span class="className">MyClass</span>, <span class="self">self</span>).<span class="methodName">my_method</span>(<span class="parameters">parameters</span>)
+      <span class="builtin">super</span>(<span class="className">MyClass</span>, <span class="self">self</span>).<span class="methodName">my_method</span>(<span class="parameters">parameters</span>)  <span class="comment"># with new-style class</span>
+      <span class="className">MyClass</span>.<span class="methodName">my_method</span>(<span class="self">self</span>, <span class="parameters">parameters</span>)  <span class="comment"># with old-style class</span>
     </code>
   </div>
 
@@ -137,10 +138,10 @@
   <div>
     <h2>In <strong>ECMAScript 6</strong>:</h2>
     <code>
-      <span class="builtin">super</span>(<span class="parameters">parameters</span>) <span class="comment">// In constructor</span>
+      <span class="builtin">super</span>(<span class="parameters">parameters</span>)  <span class="comment">// In constructor</span>
     </code>
     <code>
-      <span class="builtin">super</span>.<span class="methodName">my_method</span>(<span class="parameters">parameters</span>) <span class="comment">// Normal methods</span>
+      <span class="builtin">super</span>.<span class="methodName">my_method</span>(<span class="parameters">parameters</span>)  <span class="comment">// Normal methods</span>
     </code>
   </div>
 
