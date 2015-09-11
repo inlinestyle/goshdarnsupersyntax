@@ -3,4 +3,4 @@ Fucking Super Syntax
 
 Because syntax is hard.
 
-http://fuckingsupersyntax.com
+http://goshdarnsupersyntax.com
