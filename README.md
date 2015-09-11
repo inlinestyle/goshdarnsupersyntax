@@ -1,4 +1,4 @@
-Fucking Super Syntax
+Gosh Darn Super Syntax
 =================
 
 Because syntax is hard.
